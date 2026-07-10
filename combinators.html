@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combinator Selectors</title>
+    <style>
+        .main>h2{
+            color:red
+        }
+        .child>p+h3{
+            color:green
+        }
+        .main>.child,p h2{
+            color:blueviolet
+        }
+        .main>h2~p{
+            color:brown
+        }
+    </style>
+</head>
+<body>
+    <div  class="main">
+        <h1 style="color:blue"; >Chotaa Bheem</h1>
+        <h2>Roll No.21</h2>
+        <p> Tom & Jerry</p>
+        <p>Hiedi</p>
+        <div class="child">
+            <p> Oggy & the Cockroches</p>
+            <h3>Little Krishna</h3>
+        </div>
+        <p> Ben 10</p>
+        <h2>Motu Patlu</h2>
+    </div>
+</body>
+</html>
