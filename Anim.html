@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .music{
+        height:200px;
+        width: 800px;
+        background-color: black;
+        text-align:center;
+        }
+        .bar{
+            width: 10px;
+            height:20px;
+            display:inline-block;
+            margin: 5px;
+            vertical-align:middle;
+            animation: music .8s ease-in-out 0s infinite alternate-reverse;
+            /* animation-name:music;
+            animation-duration:.8s;
+            animation-iteration-count:infinite;
+            animation-direction:alternate-reverse;
+            animation-timing-function:ease-in-out; */
+        }
+        .b1{background:red;animation-delay:.1s;}
+        .b2{background:orange;animation-delay:.2s;}
+        .b3{background:yellow;animation-delay:.3s;}
+        .b4{background:greenyellow;animation-delay:.4s;}
+        .b5{background:lime;animation-delay:.5s;}
+        .b6{background:cyan;animation-delay:.6s;}
+        .b7{background:deepskyblue;animation-delay:.7s;}
+        .b8{background:blue;animation-delay:.8s;}
+        .b9{background:violet;animation-delay:.9s;}
+        .b10{background:magenta;animation-delay:1s;}
+
+        @keyframes music{
+            from{
+                height:20px;
+            }
+
+            to{
+                height:120px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="music">
+        <div class="bar b1"></div>
+        <div class="bar b2"></div>
+        <div class="bar b3"></div>
+        <div class="bar b4"></div>
+        <div class="bar b5"></div>
+        <div class="bar b6"></div>
+        <div class="bar b7"></div>
+        <div class="bar b8"></div>
+        <div class="bar b9"></div>
+        <div class="bar b10"></div>
+    </div>
+</body>
+</html>
